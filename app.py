@@ -1,20 +1,19 @@
 from flask import Flask,jsonify
-import random
-from string import *
+from gen import Password
+
 
 app = Flask(__name__)
 
-@app.route('/',methods=['GET'])
-def main():
-    symbols = ascii_letters + punctuation +  digits + ascii_lowercase
-    main_random = random.SystemRandom()
-    password =  "".join(main_random.choice(symbols)
-                    for i in range(18))
-    passwd = str(password)
-   
-   
-    return jsonify({"password":passwd})
+@app.route('/generate',methods=['GET'])
+def generate():
+    password = Password.generate()
+    return jsonify({"password":password})
+
+@app.route('/generate/<int:size>')
+def fixeds(size):
+    password = Password.generate(size)
+    return jsonify({"password":password})
+
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    app.run()
