@@ -1,4 +1,38 @@
 # Securepass_Api
-an API  for  generating secure passwords
 
-run app.py and make GET request to the API which should be running on your localhost on port 5000
+an API for generating secure passwords
+
+# How to Run
+
+- clone the repo 
+
+- Activate the virtual enviroment
+ - Linux : ` source env/bin/activate ` 
+  - Windows : ` env\Scripts\Activate` 
+
+- Install the dependencies
+    - ` pip install -r requirements.txt ` 
+
+- Run the app
+    - ` Python app.py `
+
+
+
+
+
+## Endpoints
+
+* /generate
+  * ### Methods: GET
+
+Returns a password of 16 characters 
+
+
+* /generate/<size>
+
+    * ### Methods: GET
+
+Returns a password of the specified size 
+
+
+
