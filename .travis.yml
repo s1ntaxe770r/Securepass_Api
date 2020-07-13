@@ -3,6 +3,22 @@ deploy:
   api_key:
     secure: ZPhORIbfpGHaMt5MZRoVwu3Al28q5KA5fe3R+lkn9n6Vh17kEI7bUPDAoA+03it2SddufDll0Nb9jvj8rPDPcu2EzcQcS91wnweHaT4Gd7eoJZJlxf1y4pGjPqxqthC8rknYwOJ1oo2gsYttVS0toc70G4U1s+8/BRKxemWx4WS1fDURQJ/1U25P5Yd7Dc5i/TPJoi6VB6Cwwm+xR6oYsOxE3eRoaNo5B1MLS2Wa079uKAiTBYzyUQRq+xbTH90v5b39kYo4gzRKyjahJsoqlP97PVFyFQmBveko7FtaKuXj3p4ZgZl344iTLrMnOMjR8PGMThRgudAYxxGP9bLiVpkmOPNM1uvXLvkJ4wv4o/xZD+KIcgAy6dqJVLTmC5XI96WCeOG49XXLyONXTjD37Qbshp9QCMhe5UtijGB3I5LHeQxqDQYgh0Xkb15UG4QELAaYGPCr06oBLVZuOlMdHX3q4dKX7/r4yrojIpVNOGZPlJttQ32k/mTvMaBLgpH1ljz8go6aVwCCKwRlH0nH5KEl016BBC0Wl7nbuwLOi0egbgzsq4Y+fFAOsUq129VgDD+5Z5bcr2A8PxJb8KbR9dpqDZc07Xy3I98mTXPol10w+bUPITAIev/YmCOGHOMgWDbjyMygmD3MEpXdDJKtuchZdTdPAQZs83XohTwIfoQ=
   app: secure-woodland
+<<<<<<< HEAD
   on:
     repo: s1ntaxe770r/Securepass_Api
   skip_cleanup: 'true'
+=======
+  run: "gunicorn app:app"
+
+language: python
+python:
+  - "3.8"
+  
+install:
+  - pip install -r requirements.txt
+  - pip install black
+ 
+script: python tests.py
+
+    
+>>>>>>> 11852e06ac92b45d89ab38d9edfdc91faf29aef3
