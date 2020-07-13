@@ -1,17 +1,8 @@
----
 deploy:
   provider: heroku
-  api_key: DzIbzsdw+erjSw/rONMWzsG33WsjQe0JT197VVDNjvmHr5dLeoDrKAgmqGs1f+Tz9rqfuSNojo3ojqmpoFvAht738CUZJIaJJ5H9vt/KLlVum0V+ZOqDTGjfEhkW+f3pjuNy1hxvUvJVmyQggFUDPTka/KxQTOxwC3ii7KHG3Q+QswFvAJM4JBoE1d2H/0Ip5oWLfV17UIwsq0SNmt5lDV9EbJc7+LAcDwrH9zhCRAUxyDgqlleo760VEcP2y0R63p0VsBBIo+QX4ywzZl2rIp7l3ZezoQXgoyi+Clpi/t0RtFnjQznwcVSpi7NKmFGH4iOufDRH+S+AeWa35SFjPd6T9dayfsapH91ji73lxQ05PFYZExpE0UsiA8HUhmXdcVQOb6o5TX/bpExc59KISGBTFegn2D+SIFiQXMqMzF8RDDnhxnANVitU9iJNr/1QbkqQSRo5Tf0wjZt7Qed4FxLHRcG8yepc4fRiXBjwe86XYwutqgWchLfSe4TMvLbyf2OHr4hSrD1dqQBx4G/dJkOfEoYkS9u5NAo9reCAO1f4N/RjxoL4K8uC6P60kwDI6FeGRrVT1w5KUwOHbANaG9dzymNVUYK/bANYO0VJywhwHjz8g0tM5F48TooW/eA/VkH3jFxmOxS4DXANINuzcriLUEqdTMQCQTDQebdRxUE=
+  api_key:
+    secure: ZPhORIbfpGHaMt5MZRoVwu3Al28q5KA5fe3R+lkn9n6Vh17kEI7bUPDAoA+03it2SddufDll0Nb9jvj8rPDPcu2EzcQcS91wnweHaT4Gd7eoJZJlxf1y4pGjPqxqthC8rknYwOJ1oo2gsYttVS0toc70G4U1s+8/BRKxemWx4WS1fDURQJ/1U25P5Yd7Dc5i/TPJoi6VB6Cwwm+xR6oYsOxE3eRoaNo5B1MLS2Wa079uKAiTBYzyUQRq+xbTH90v5b39kYo4gzRKyjahJsoqlP97PVFyFQmBveko7FtaKuXj3p4ZgZl344iTLrMnOMjR8PGMThRgudAYxxGP9bLiVpkmOPNM1uvXLvkJ4wv4o/xZD+KIcgAy6dqJVLTmC5XI96WCeOG49XXLyONXTjD37Qbshp9QCMhe5UtijGB3I5LHeQxqDQYgh0Xkb15UG4QELAaYGPCr06oBLVZuOlMdHX3q4dKX7/r4yrojIpVNOGZPlJttQ32k/mTvMaBLgpH1ljz8go6aVwCCKwRlH0nH5KEl016BBC0Wl7nbuwLOi0egbgzsq4Y+fFAOsUq129VgDD+5Z5bcr2A8PxJb8KbR9dpqDZc07Xy3I98mTXPol10w+bUPITAIev/YmCOGHOMgWDbjyMygmD3MEpXdDJKtuchZdTdPAQZs83XohTwIfoQ=
   app: secure-woodland
-  run: "gunicorn app:app"
-
-language: python
-python:
-  - "3.8"
-  
-install:
-  - pip install -r requirements.txt
- 
-script: python tests.py
-
-    
+  on:
+    repo: s1ntaxe770r/Securepass_Api
+  skip_cleanup: 'true'
