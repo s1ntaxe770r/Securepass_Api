@@ -1,4 +1,4 @@
-# Securepass_Api
+# Securepass_Api       ![Python application](https://github.com/s1ntaxe770r/Securepass_Api/workflows/Python%20application/badge.svg)
 
 an API for generating secure passwords
 
@@ -28,11 +28,14 @@ an API for generating secure passwords
 Returns a password of 16 characters 
 
 
-* /generate/<size>
+* /generate/\<int:size>/
 
     * ### Methods: GET
 
 Returns a password of the specified size 
+
+
+## consider leaving a :star:
 
 
 
